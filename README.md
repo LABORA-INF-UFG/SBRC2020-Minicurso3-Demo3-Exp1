@@ -2,17 +2,24 @@
 NetSoft2020-Tutorial4-Demo3-Exp1
 
 ## Expected result
-
-ToDo ....
+This experiment aims to demonstrate a RAN based on LTE technology with integrated with a LoRa wireless network implemented in hardware (non-3GPP Network). For RAN LTE, we use open-source software and an SDR. We also use an open-source implementation of the SBA-based 5G core software, as illustrated by the following image.
 <p align="center">
     <img src="images/demo3-exp1.png"/> 
 </p>
 
-## Installation
+In this experiment, RAN is deployed with the Software Radio Systems LTE project, i.e., LTE. The Core is implemented using the free5GC project. This experiment's main goal is to demonstrate a connection between UE in hardware (LoRaWAN Gateway with LTE interface ), 4G RAN in hardware (SDR - Software-Defined Radio) and software, and 5G SBA core implemented in software.
+
+The minimum hardware requirement and software to run this experiment is shown in the image below.
+
+todo...
+
+For this experiment, we assume that the machines has full access to the Internet.
+
+# 1 - Installation tools
 
 **Requirements**
 
-The installation can be done directly over the host operating system (OS) or inside a virtual machine (VM). System requirements:
+The installation can be done directly over the host operating system (OS) or inside 2 virtual machines (VMs). System requirements:
 * CPU type: x86-64 (specific model and number of cores only affect performance)
 * RAM: 4 GB
 * Disk space: 40 GB
@@ -91,5 +98,25 @@ Test the installation.
 
 ```
 $ docker-compose --version
-docker-compose version 1.26.0, build 1110ad01
+docker-compose version 1.26.0, build d4451659
+```
+
+After, we can clone the **NetSoft2020-Tutorial4-Demo3-Exp1 project**:
+```
+$ git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo3-Exp1.git
+```
+
+# 2 - Build the images and running the containers eNB and free5G
+
+
+# 3 - Build the images and running the containers LoRaWAN 
+
+In te second VM or Cloud, repeat all Step 1.
+
+```
+cd  NetSoft2020-Tutorial4-Demo3-Exp1/LoRaWAN$
+```
+Run
+```
+sudo docker-compose up -d
 ```
