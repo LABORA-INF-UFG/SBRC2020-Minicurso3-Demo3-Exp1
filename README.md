@@ -108,10 +108,42 @@ $ git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo3-Exp1.g
 
 # 2 - Build the images and running the containers eNB and free5G
 
+On the first VM or MiniPC where the SDR is connected.
+
+
+To build the eNB and all 5GC images, use the following command:  
+```
+$ sudo docker build -t netsoft2020tutorial4demo2exp2 .  todooooo-------
+```
+
+We can check if the images are up:
+```
+$ sudo docker image ls
+```
+The output should be similar to the following:
+<p align="center">
+    <img src="images/images_d2_e2.png"/> 
+</p>
+
+To run the containers, use the following command:
+```
+$ sudo docker-compose up -d
+```
+
+We can check if the containers are up:
+```
+$ sudo docker-compose ps
+```
+The output should be similar to the following:
+<p align="center">
+    <img src="images/containers_d2_e2.png"/> 
+</p>
+
+Done! The software is successfully installed.
 
 # 3 - Build the images and running the containers LoRaWAN 
 
-In te second VM or Cloud, repeat all Step 1.
+On te second VM or Cloud, repeat all Step 1.
 
 ```
 cd  NetSoft2020-Tutorial4-Demo3-Exp1/LoRaWAN$
@@ -125,7 +157,32 @@ sudo docker-compose up -d
     <img src="images/lorawan_docker_result.png"/> 
 </p>
 
-Config LoRaWAN Network Server (Chirpstack)
+
+***Add a LoRa® gateway
+
+There are two steps involved when adding a gateway. First of all, you need to configure your gateway so that it sends data to the ChirpStack Gateway Bridge component. In the packet-forwarder configuration, modify the following configuration keys:
+
+server_address to the IP address / hostname of the ChirpStack Gateway Bridge
+serv_port_up to 1700 (the default port that ChirpStack Gateway Bridge is using)
+serv_port_down to 1700 (same)
+
+The second step is to add the LoRa gateway to your ChirpStack Server network. For this, log in into the ChirpStack Application Server web-interface and add the gateway to your organization. In case your gateway does not have a GPS, you can set the location manually.
+
+todo figura
+
+***Setting up your first LoRaWAN® device
+
+Now all ChirpStack components are installed, you should be able to navigate to the ChirpStack Application Server web-interface.
+
+To access the ChirpStack Application Server web-interface, enter the IP address or hostname of you server, followed by port 8080.
+
+Example: https://localhost:8080/.
+
+Once you have the interface working, you are ready to add the configurations required in order to receive data from a device.
+
+****Add network-server
+
+In order to connect your ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and then Add.
 
 As each container has its own hostname, you must use the hostname of the networkserver container when adding the network-server in the ChirpStack Application Server web-interface. (sudo docker ps)
 
@@ -134,3 +191,29 @@ As each container has its own hostname, you must use the hostname of the network
 </p>
 
 When using the above example, it means that you must enter lorawan_chirpstack-network-server_1:8000 as the network-server hostname:Port.
+
+
+****Service Profile
+The service-profile defines the features that can be used by an organization.
+
+Click on Service-profiles and then Create to create a service-profile for the ChirpStack organization. This will also associate the organization with the network-server instance.
+
+****Device Profile
+The device-profile defines the device properties of a device. For example it defines the activation type (OTAA vs ABP), the implemented LoRaWAN version etc…
+
+Click on Device-profiles and then Create to create a device-profile for the ChirpStack organization.
+
+****Application
+Now that there is a ChirpStack Application Server / ChirpStack Network Server association, a service-profile for the organization and device-profile, it is time to create your first application.
+
+Click on Applications, then click on Create.
+
+Next, click on the created application to see the list of devices associated with this application. This will be an empty list until you complete the next step…
+
+****Device
+Click on the Devices tab (found under Application/YourApp if you aren’t there already), then click on the Create button to create a new device.
+
+After the creation of an Over the Air Activation (OTAA) device, you will be redirected to a page where you can enter the root key(s). After the creation of an Activation By Personalization (ABP) device, you will be redirected to a page where you can enter the session keys. The selected Device Profile that was created in the steps above determines whether the device uses OTAA or ABP.
+
+Check that you are receiving data
+It is possible to stream all LoRaWAN frames (raw and encrypted data) and device data from the web-interface. Click on the created device and click on the live data or LoRaWAN frames tab. Now it is time to turn on your device and start receiving data!
