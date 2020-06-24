@@ -158,7 +158,7 @@ sudo docker-compose up -d
 </p>
 
 
-***Add a LoRa® gateway
+***Add a LoRa® gateway***
 
 There are two steps involved when adding a gateway. First of all, you need to configure your gateway so that it sends data to the ChirpStack Gateway Bridge component. In the packet-forwarder configuration, modify the following configuration keys:
 
@@ -170,7 +170,7 @@ The second step is to add the LoRa gateway to your ChirpStack Server network. Fo
 
 todo figura
 
-***Setting up your first LoRaWAN® device
+***Setting up your first LoRaWAN® device***
 
 Now all ChirpStack components are installed, you should be able to navigate to the ChirpStack Application Server web-interface.
 
@@ -180,7 +180,7 @@ Example: https://localhost:8080/.
 
 Once you have the interface working, you are ready to add the configurations required in order to receive data from a device.
 
-****Add network-server
+****Add network-server****
 
 In order to connect your ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and then Add.
 
@@ -193,24 +193,28 @@ As each container has its own hostname, you must use the hostname of the network
 When using the above example, it means that you must enter lorawan_chirpstack-network-server_1:8000 as the network-server hostname:Port.
 
 
-****Service Profile
+****Service Profile****
+
 The service-profile defines the features that can be used by an organization.
 
 Click on Service-profiles and then Create to create a service-profile for the ChirpStack organization. This will also associate the organization with the network-server instance.
 
-****Device Profile
+****Device Profile****
+
 The device-profile defines the device properties of a device. For example it defines the activation type (OTAA vs ABP), the implemented LoRaWAN version etc…
 
 Click on Device-profiles and then Create to create a device-profile for the ChirpStack organization.
 
-****Application
+****Application****
+
 Now that there is a ChirpStack Application Server / ChirpStack Network Server association, a service-profile for the organization and device-profile, it is time to create your first application.
 
 Click on Applications, then click on Create.
 
 Next, click on the created application to see the list of devices associated with this application. This will be an empty list until you complete the next step…
 
-****Device
+****Device****
+
 Click on the Devices tab (found under Application/YourApp if you aren’t there already), then click on the Create button to create a new device.
 
 After the creation of an Over the Air Activation (OTAA) device, you will be redirected to a page where you can enter the root key(s). After the creation of an Activation By Personalization (ABP) device, you will be redirected to a page where you can enter the session keys. The selected Device Profile that was created in the steps above determines whether the device uses OTAA or ABP.
