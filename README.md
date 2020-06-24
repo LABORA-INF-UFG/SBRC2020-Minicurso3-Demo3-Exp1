@@ -127,8 +127,10 @@ sudo docker-compose up -d
 
 Config LoRaWAN Network Server (Chirpstack)
 
-As each container has its own hostname, you must use the hostname of the networkserver container when adding the network-server in the ChirpStack Application Server web-interface.
+As each container has its own hostname, you must use the hostname of the networkserver container when adding the network-server in the ChirpStack Application Server web-interface. (sudo docker ps)
 
+<p align="center">
+    <img src="images/lorawan_add_nt_server.png"/> 
+</p>
 
-
-When using the above example, it means that you must enter chirpstack-network-server:8000 as the network-server hostname:IP. See Network Servers for more information.
+When using the above example, it means that you must enter lorawan_chirpstack-network-server_1:8000 as the network-server hostname:Port.
