@@ -113,7 +113,7 @@ On the first VM or MiniPC where the SDR is connected.
 
 To build the eNB and all 5GC images, use the following command:  
 ```
-$ sudo docker build -t netsoft2020tutorial4demo2exp2 .  todooooo-------
+$ sudo docker build -t netsoft2020tutorial4demo2exp2 .  todoooo
 ```
 
 We can check if the images are up:
