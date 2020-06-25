@@ -1,5 +1,4 @@
 # NetSoft2020-Tutorial4-Demo3-Exp1
-NetSoft2020-Tutorial4-Demo3-Exp1
 
 ## Expected result
 This experiment aims to demonstrate a RAN based on LTE technology with integrated with a LoRa wireless network implemented in hardware (non-3GPP Network). For RAN LTE, we use open-source software and an SDR. We also use an open-source implementation of the SBA-based 5G core software, as illustrated by the following image.
