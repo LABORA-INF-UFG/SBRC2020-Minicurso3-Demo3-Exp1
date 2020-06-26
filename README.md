@@ -98,8 +98,11 @@ We use the [PingTools Network Utilities](https://play.google.com/store/apps/deta
 </p>
 
 --> Até aqui é igual ao Demo2-exp3
+
 --> Lúcio revisar
+
 --> Colocar o celular em modo gateway
+
 --> Começar a parte do LoRa
 
 
