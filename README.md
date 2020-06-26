@@ -188,5 +188,12 @@ The running application, where the data received from the sensor is displayed.
 
 ## Additional comments
 
-In this experimentation ...
+In this experimentation are two steps involved when adding a gateway LoRa. First of all, you need to configure your gateway so that it sends data to the ChirpStack Gateway Bridge component. In the packet-forwarder configuration, modify the following configuration keys:
 
+server_address to the IP address / hostname of the ChirpStack Gateway Bridge
+serv_port_up to 1700 (the default port that ChirpStack Gateway Bridge is using)
+serv_port_down to 1700 (same)
+
+The second step is to add the LoRa gateway to your ChirpStack Server network. For this, log in into the ChirpStack Application Server web-interface and add the gateway to your organization. In case your gateway does not have a GPS, you can set the location manually.
+
+LoRaWAN network components were provided by the project https://www.chirpstack.io/
