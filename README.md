@@ -119,7 +119,7 @@ We connect the phone to the gateway via USB. Then the phone is placed in USB Tet
 
 Now all LoRaWAN components are installed. We need to configure the network through the web interface. http://IP:8080
 <p align="center">
-    <img src="images/login_chirpstack.png"/> 
+    <img src="images/login_chirpstack.png"  height="450"/> 
 </p>
 
 We connect ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and then Add.
