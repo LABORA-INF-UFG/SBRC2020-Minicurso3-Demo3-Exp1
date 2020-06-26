@@ -118,6 +118,9 @@ We connect the phone to the gateway via USB. Then the phone is placed in USB Tet
 ***Setting  LoRaWAN® Network***
 
 Now all LoRaWAN components are installed. We need to configure the network through the web interface. http://IP:8080
+<p align="center">
+    <img src="images/login_chirpstack.png"/> 
+</p>
 
 We connect ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and then Add.
 
@@ -143,19 +146,26 @@ We need  configure Gateway Profile
     <img src="images/lorawan_gwprofile_add.png"/> 
 </p>
 
+The lorawan gateway must be functional if the following information appears.
 <p align="center">
+    
     <img src="images/lorawan_gateway_test.png"/> 
 </p>
-.........
+
+Now we need to configure the sensors that we want to monitor. We need to add a profile for the device.
 
 <p align="center">
     <img src="images/device_profile.png"/> 
 </p>
 
+This device must be associated with an application, so we must create
+
 <p align="center">
     <img src="images/device_application.png"/> 
 </p>
 
+
+After creating the application we can add the device to the application.
 <p align="center">
     <img src="images/device_add.png"/> 
 </p>
@@ -165,13 +175,19 @@ We need  configure Gateway Profile
 </p>
 
 
+Finally we have the network configured.
 <p align="center">
     <img src="images/device_connected.png"/> 
 </p>
 
+The running application, where the data received from the sensor is displayed.
 
 <p align="center">
     <img src="images/device_test.png"/> 
 </p>
 
+
+## Additional comments
+
+In this experimentation ...
 
