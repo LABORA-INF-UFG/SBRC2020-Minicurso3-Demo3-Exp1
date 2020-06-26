@@ -148,7 +148,6 @@ We need  configure Gateway Profile
 
 The lorawan gateway must be functional if the following information appears.
 <p align="center">
-    
     <img src="images/lorawan_gateway_test.png"/> 
 </p>
 
