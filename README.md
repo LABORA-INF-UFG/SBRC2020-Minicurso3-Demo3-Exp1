@@ -21,6 +21,7 @@ The minimum hardware requirement and software to run this experiment is shown in
 * Docker 18.09.7
 * srsLTE release 19_12
 * free5GC stage 1
+* ChirpStack 
 
 **Steps**
 
@@ -96,12 +97,6 @@ The first step of the experiment is to store in HSS the UE's information using t
     <img src="images/webapp.png"/> 
 </p>
 
-We use the [openSTF](https://openstf.io/) tool to access the smartphone remotely.
-This software is available at http://localhost:7100, as is shown in the image below.
-<p align="center">
-    <img src="images/openSTF.png" height="450" width="450"/> 
-</p>
-
 We can see the smartphone connected in the network called free5GC available. 
 <p align="center">
     <img src="images/connectedfree5GC.png" height="450"/> 
@@ -113,6 +108,12 @@ We use the [PingTools Network Utilities](https://play.google.com/store/apps/deta
     <img src="images/ping.png" height="450"/> 
 </p>
 
+
+We connect the phone to the gateway via USB. Then the phone is placed in USB Tethering mode, to make the connection via the cellular network.
+<p align="center">
+    <img src="images/tethering.png" height="450"/> 
+    <img src="images/gateway_phone.png" height="450"/> 
+</p>
 --> Colocar o celular em modo gateway 
 
 --> Começar a parte do LoRa
