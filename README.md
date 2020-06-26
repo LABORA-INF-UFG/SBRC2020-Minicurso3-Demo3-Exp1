@@ -149,7 +149,7 @@ We need  configure Gateway Profile
 The lorawan gateway must be functional if the following information appears.
 <p align="center">
     
-    <img src="images/lorawa_gateway_test.png"/> 
+    <img src="images/lorawan_gateway_test.png"/> 
 </p>
 
 Now we need to configure the sensors that we want to monitor. We need to add a profile for the device.
