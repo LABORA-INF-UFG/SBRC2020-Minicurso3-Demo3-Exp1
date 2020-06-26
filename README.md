@@ -44,7 +44,7 @@ git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo3-Exp1.git
 
 To build the eNB and all 5GC images, use the following command:  
 ```
-sudo docker build -t netsoft2020tutorial4demo3exp3 .
+sudo docker build -t netsoft2020tutorial4demo3exp1 .
 ```
 
 To run the containers, use the following command:
@@ -78,7 +78,7 @@ sudo docker image ls
 ```
 The output should be similar to the following:
 <p align="center">
-    <img src="images/images_d2_e2.png"/> 
+    <img src="images/images_d3_e1.png"/> 
 </p>
 
 We can check if the containers are up:
@@ -87,7 +87,7 @@ sudo docker-compose ps
 ```
 The output should be similar to the following:
 <p align="center">
-    <img src="images/containers_d2_e2.png"/> 
+    <img src="images/containers_d3_e1.png"/> 
 </p>
 
 The first step of the experiment is to store in HSS the UE's information using the Web Interface of the [free5GC](https://www.free5gc.org/) project that is available at http://localhost:3000, as is shown in the image below.
