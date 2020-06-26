@@ -143,7 +143,7 @@ After adding the Service Profile, we need to add the gateway ID that will be man
 We need  configure Gateway Profile
 
 <p align="center">
-    <img src="images/lorawan_gwprofile_add.png"/> 
+    <img src="images/lorawa_gwprofile_add.png"/> 
 </p>
 
 The lorawan gateway must be functional if the following information appears.
