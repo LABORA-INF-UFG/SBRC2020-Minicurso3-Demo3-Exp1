@@ -113,7 +113,7 @@ We use the [PingTools Network Utilities](https://play.google.com/store/apps/deta
     <img src="images/ping.png" height="450"/> 
 </p>
 
-<div class="text-red mb-2"> --> Colocar o celular em modo gateway </div>
+--> Colocar o celular em modo gateway 
 
 --> Começar a parte do LoRa
 
