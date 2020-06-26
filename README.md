@@ -52,6 +52,22 @@ To run the containers, use the following command:
 sudo docker-compose up -d
 ```
 
+To build the LoRaWAN imagens, we use a Virtal Machine in the cloud and the following the commands:
+```
+git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo3-Exp1.git
+```
+
+```
+cd  NetSoft2020-Tutorial4-Demo3-Exp1/LoRaWAN
+```
+
+```
+sudo docker-compose up -d
+```
+<p align="center">
+    <img src="images/lorawan_docker_result.png"/> 
+</p>
+
 Done! The software is successfully installed.
 
 ## Tests
@@ -97,29 +113,13 @@ We use the [PingTools Network Utilities](https://play.google.com/store/apps/deta
     <img src="images/ping.png" height="450"/> 
 </p>
 
---> Até aqui é igual ao Demo2-exp3
-
---> Lúcio revisar
 
 --> Colocar o celular em modo gateway
 
 --> Começar a parte do LoRa
 
 
-On te second VM or Cloud, repeat all Step 1. 
-
-```
-cd  NetSoft2020-Tutorial4-Demo3-Exp1/LoRaWAN$
-```
-Run
-```
-sudo docker-compose up -d
-```
-
-<p align="center">
-    <img src="images/lorawan_docker_result.png"/> 
-</p>
-
+--> Lúcio revisar. Precisamos ver se essa configuração fará parte da seção de instalação o teste.
 
 ***Add a LoRa® gateway***
 
