@@ -125,64 +125,64 @@ Now all LoRaWAN components are installed. We need to configure the network throu
 We connect ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and then Add.
 
 <p align="center">
-    <img src="images/lorawan_add_nt_server.png"/> 
+    <img src="images/lorawan_add_nt_server.png" height="450"/> 
 </p>
 
 We need create a service profile
 
 <p align="center">
-    <img src="images/lorawan_service_profile.png"/> 
+    <img src="images/lorawan_service_profile.png" height="450"/> 
 </p>
 
 After adding the Service Profile, we need to add the gateway ID that will be managed
 
 <p align="center">
-    <img src="images/lorawan_gateway_add.png"/> 
+    <img src="images/lorawan_gateway_add.png" height="450"/> 
 </p>
 
 We need  configure Gateway Profile
 
 <p align="center">
-    <img src="images/lorawa_gwprofile_add.png"/> 
+    <img src="images/lorawa_gwprofile_add.png" height="450"/> 
 </p>
 
 The lorawan gateway must be functional if the following information appears.
 <p align="center">
-    <img src="images/lorawan_gateway_test.png"/> 
+    <img src="images/lorawan_gateway_test.png" height="450"/> 
 </p>
 
 Now we need to configure the sensors that we want to monitor. We need to add a profile for the device.
 
 <p align="center">
-    <img src="images/device_profile.png"/> 
+    <img src="images/device_profile.png" height="450"/> 
 </p>
 
 This device must be associated with an application, so we must create
 
 <p align="center">
-    <img src="images/device_application.png"/> 
+    <img src="images/device_application.png" height="450"/> 
 </p>
 
 
 After creating the application we can add the device to the application.
 <p align="center">
-    <img src="images/device_add.png"/> 
+    <img src="images/device_add.png" height="450"/> 
 </p>
 
 <p align="center">
-    <img src="images/device_add_config.png"/> 
+    <img src="images/device_add_config.png" height="450"/> 
 </p>
 
 
 Finally we have the network configured.
 <p align="center">
-    <img src="images/device_connected.png"/> 
+    <img src="images/device_connected.png" height="450"/> 
 </p>
 
 The running application, where the data received from the sensor is displayed.
 
 <p align="center">
-    <img src="images/device_test.png"/> 
+    <img src="images/device_test.png" height="450"/> 
 </p>
 
 
