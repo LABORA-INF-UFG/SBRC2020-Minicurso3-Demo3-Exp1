@@ -44,7 +44,7 @@ git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo3-Exp1.git
 
 To build the eNB and all 5GC images, use the following command:  
 ```
-sudo docker build -t netsoft2020tutorial4demo3exp3 .
+sudo docker build -t netsoft2020tutorial4demo3exp1 .
 ```
 
 To run the containers, use the following command:
