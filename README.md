@@ -121,63 +121,63 @@ We connect the smartphone to the gateway via USB. This smartphone is placed in U
 
 We need to configure the network through the Web interface at http://IP:8080.
 <p align="center">
-    <img src="images/login_chirpstack.png"/> 
+    <img src="images/login_chirpstack.png"  height="450"/> 
 </p>
 
 To connect the ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and after click in Add.
 <p align="center">
-    <img src="images/lorawan_add_nt_server.png"/> 
+    <img src="images/lorawan_add_nt_server.png" height="450"/> 
 </p>
 
 To create a service profile.
 <p align="center">
-    <img src="images/lorawan_service_profile.png"/> 
+    <img src="images/lorawan_service_profile.png" height="450"/> 
 </p>
 
 To add the gateway ID that will be managed, after adding the Service Profile.
 <p align="center">
-    <img src="images/lorawan_gateway_add.png"/> 
+    <img src="images/lorawan_gateway_add.png" height="450"/> 
 </p>
 
 To configure the Gateway Profile.
 <p align="center">
-    <img src="images/lorawa_gwprofile_add.png"/> 
+    <img src="images/lorawa_gwprofile_add.png" height="450"/> 
 </p>
 
 The LoRaWAN gateway must be functional if the following information appears.
 <p align="center">
-    <img src="images/lorawan_gateway_test.png"/> 
+    <img src="images/lorawan_gateway_test.png" height="450"/> 
 </p>
 
 To configure the sensors that we want to monitor, add a profile for the device.
 <p align="center">
-    <img src="images/device_profile.png"/> 
+    <img src="images/device_profile.png" height="450"/> 
 </p>
 
 The device must be associated with an application, so we must create it.
 <p align="center">
-    <img src="images/device_application.png"/> 
+    <img src="images/device_application.png" height="450"/> 
 </p>
 
 
 We can add the device to the application. 
 <p align="center">
-    <img src="images/device_add.png"/> 
+    <img src="images/device_add.png" height="450"/> 
 </p>
 
 <p align="center">
-    <img src="images/device_add_config.png"/> 
+    <img src="images/device_add_config.png" height="450"/> 
 </p>
 
 
 Finally, we have the network configured.
 <p align="center">
-    <img src="images/device_connected.png"/> 
+    <img src="images/device_connected.png" height="450"/> 
 </p>
 
 We can see the data received from the sensor in the application.
 <p align="center">
-    <img src="images/device_test.png"/> 
+    <img src="images/device_test.png" height="450"/> 
 </p>
 
 
