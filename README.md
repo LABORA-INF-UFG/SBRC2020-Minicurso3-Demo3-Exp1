@@ -77,6 +77,7 @@ We can check if the images are up:
 ```
 sudo docker image ls
 ```
+
 The output should be similar to the following:
 <p align="center">
     <img src="images/images_d3_e1.png"/> 
@@ -86,6 +87,7 @@ We can check if the containers are up:
 ```
 sudo docker-compose ps
 ```
+
 The output should be similar to the following:
 <p align="center">
     <img src="images/containers_d3_e1.png"/> 
@@ -104,67 +106,61 @@ We can see the smartphone connected in the network called free5GC available.
 
 We use the [PingTools Network Utilities](https://play.google.com/store/apps/details?id=ua.com.streamsoft.pingtools&hl=pt_BR) tool available at GooglePlay to test the connectivity of the network.
 <p align="center">
-    <img src="images/network.png" height="450"/> 
+    <img src="images/network.png" height="450" width="300"/> 
     <img src="images/ping.png" height="450"/> 
 </p>
 
 
-We connect the phone to the gateway via USB. Then the phone is placed in USB Tethering mode, to make the connection via the cellular network.
+We connect the smartphone to the gateway via USB. This smartphone is placed in USB Tethering mode to make the connection via the cellular network.
 <p align="center">
-    <img src="images/tethering.png" height="450"/> 
-    <img src="images/gateway_phone.png" height="450"/> 
+    <img src="images/tethering.png" height="450" width="300"/> 
+    <img src="images/gateway_phone.png" height="450" width="300"/> 
 </p>
 
-***Setting  LoRaWAN® Network***
+**Setting  LoRaWAN® Network**
 
-Now all LoRaWAN components are installed. We need to configure the network through the web interface. http://IP:8080
+We need to configure the network through the Web interface at http://IP:8080.
 <p align="center">
     <img src="images/login_chirpstack.png"/> 
 </p>
 
-We connect ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and then Add.
-
+To connect the ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and after click in Add.
 <p align="center">
     <img src="images/lorawan_add_nt_server.png"/> 
 </p>
 
-We need create a service profile
-
+To create a service profile.
 <p align="center">
     <img src="images/lorawan_service_profile.png"/> 
 </p>
 
-After adding the Service Profile, we need to add the gateway ID that will be managed
-
+To add the gateway ID that will be managed, after adding the Service Profile.
 <p align="center">
     <img src="images/lorawan_gateway_add.png"/> 
 </p>
 
-We need  configure Gateway Profile
-
+To configure the Gateway Profile.
 <p align="center">
     <img src="images/lorawa_gwprofile_add.png"/> 
 </p>
 
-The lorawan gateway must be functional if the following information appears.
+The LoRaWAN gateway must be functional if the following information appears.
 <p align="center">
     <img src="images/lorawan_gateway_test.png"/> 
 </p>
 
-Now we need to configure the sensors that we want to monitor. We need to add a profile for the device.
-
+To configure the sensors that we want to monitor, add a profile for the device.
 <p align="center">
     <img src="images/device_profile.png"/> 
 </p>
 
-This device must be associated with an application, so we must create
-
+The device must be associated with an application, so we must create it.
 <p align="center">
     <img src="images/device_application.png"/> 
 </p>
 
 
-After creating the application we can add the device to the application.
+We can add the device to the application. 
 <p align="center">
     <img src="images/device_add.png"/> 
 </p>
@@ -174,13 +170,12 @@ After creating the application we can add the device to the application.
 </p>
 
 
-Finally we have the network configured.
+Finally, we have the network configured.
 <p align="center">
     <img src="images/device_connected.png"/> 
 </p>
 
-The running application, where the data received from the sensor is displayed.
-
+We can see the data received from the sensor in the application.
 <p align="center">
     <img src="images/device_test.png"/> 
 </p>
@@ -188,12 +183,22 @@ The running application, where the data received from the sensor is displayed.
 
 ## Additional comments
 
-In this experimentation are two steps involved when adding a gateway LoRa. First of all, you need to configure your gateway so that it sends data to the ChirpStack Gateway Bridge component. In the packet-forwarder configuration, modify the following configuration keys:
+Two steps are needed when adding a gateway LoRa. 
 
+1. To configure the gateway that it sends data to the ChirpStack Gateway Bridge component. In the packet-forwarder configuration, modify the following configuration keys:
+```
 server_address to the IP address / hostname of the ChirpStack Gateway Bridge
 serv_port_up to 1700 (the default port that ChirpStack Gateway Bridge is using)
 serv_port_down to 1700 (same)
+```
+2. To add the LoRa gateway to the ChirpStack Server network. For this, access the ChirpStack Application Server web-interface and add the gateway to your organization. In case your gateway does not have a GPS, you can set the location manually.
 
-The second step is to add the LoRa gateway to your ChirpStack Server network. For this, log in into the ChirpStack Application Server web-interface and add the gateway to your organization. In case your gateway does not have a GPS, you can set the location manually.
+LoRaWAN network components were provided by the [chirpstack](https://www.chirpstack.io/) project.
 
-LoRaWAN network components were provided by the project https://www.chirpstack.io/
+The SIM card used is of [sysmocom](https://www.sysmocom.de/index.html) with an Android Samsung Galaxy S7 SM-G930F.
+
+SDR is an [Ettus B210](https://www.ettus.com/) with four antennas connected via USB in the mini PC.  
+
+RAN is deployed with the [Software Radio Systems LTE](https://github.com/srsLTE/srsLTE) project.
+
+The Core is implemented using the [free5GC](https://www.free5gc.org/) project.
