@@ -198,7 +198,7 @@ We need to configure the corresponding hardware device address.
 
 LoRaWAN software network components were provided by the [chirpstack](https://www.chirpstack.io/) project.
 
-The LoRaWAN sensor is a [generic microcontroller](https://heltec.org/project/wifi-lora-32/) with a lora radio interface. It uses the following [sample software](https://github.com/matthijskooijman/arduino-lmic/blob/master/examples/ttn-abp/ttn-abp.ino)
+The LoRaWAN sensor is a [generic microcontroller](https://heltec.org/project/wifi-lora-32/) with a lora radio interface. It uses the following [sample software](https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo3-Exp1/blob/master/LoRaWAN/lora_nodo_code.ino)
 
 The SIM card used is of [sysmocom](https://www.sysmocom.de/index.html) with an Android Samsung Galaxy S7 SM-G930F.
 
