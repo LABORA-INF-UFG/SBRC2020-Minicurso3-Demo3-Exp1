@@ -56,3 +56,8 @@ to open http://localhost:8080/ in your browser.
 When adding the Network Server in the ChirpStack Application Server web-interface
 (see [Network Servers](https://www.chirpstack.io/application-server/use/network-servers/)),
 you must enter `chirpstack-network-server:8000` as the Network Server `hostname:IP`.
+
+
+### LoRaWAN Nodo
+
+lora_node_code
