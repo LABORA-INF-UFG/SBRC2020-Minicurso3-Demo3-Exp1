@@ -123,9 +123,9 @@ Finally, we have the network configured.
     <img src="images/device_connected.png" height="450"/> 
 </p>
 
-We can see the data received from the sensor in the application.
+We can see the data received from the sensor in the LoRaWAN application server.
 <p align="center">
-    <img src="images/device_test.png" height="450"/> 
+    <img src="images/device_test.png"/> 
 </p>
 
 
@@ -140,33 +140,32 @@ server_address to the IP address / hostname of the ChirpStack Gateway Bridge
 serv_port_up to 1700 (the default port that ChirpStack Gateway Bridge is using)
 serv_port_down to 1700 (same)
 ```
-2. To add the LoRa gateway to the ChirpStack Server network. For this, access the ChirpStack Application Server web-interface and add the gateway to your organization. In case your gateway does not have a GPS, you can set the location manually.
+More details on installing the gateway with the Raspberry Pi in the [product manual](https://resource.heltec.cn/download/HT-M01/ht-m01_user_manual.pdf).
 
-**Setting  LoRaWAN® Network**
+2. To add the LoRa gateway to the ChirpStack Server network. For this, access the ChirpStack Application Server web-interface (http://IP:8080) and add the gateway with the following steps. 
 
-We need to configure the network through the Web interface at http://IP:8080.
 <p align="center">
     <img src="images/login_chirpstack.png"  height="450"/> 
 </p>
 
 To connect the ChirpStack Application Server instance with the ChirpStack Network Server instance, click Network servers and after click in Add.
 <p align="center">
-    <img src="images/lorawan_add_nt_server.png" height="450"/> 
+    <img src="images/lorawan_add_nt_server.png"/> 
 </p>
 
 To create a service profile.
 <p align="center">
-    <img src="images/lorawan_service_profile.png" height="450"/> 
+    <img src="images/lorawan_service_profile.png"/> 
 </p>
 
 To add the gateway ID that will be managed, after adding the Service Profile.
 <p align="center">
-    <img src="images/lorawan_gateway_add.png" height="450"/> 
+    <img src="images/lorawan_gateway_add.png"/> 
 </p>
 
 To configure the Gateway Profile.
 <p align="center">
-    <img src="images/lorawa_gwprofile_add.png" height="450"/> 
+    <img src="images/lorawa_gwprofile_add.png"/> 
 </p>
 
 The LoRaWAN gateway must be functional if the following information appears.
@@ -176,28 +175,30 @@ The LoRaWAN gateway must be functional if the following information appears.
 
 To configure the sensors that we want to monitor, add a profile for the device.
 <p align="center">
-    <img src="images/device_profile.png" height="450"/> 
+    <img src="images/device_profile.png"/> 
 </p>
 
 The device must be associated with an application, so we must create it.
 <p align="center">
-    <img src="images/device_application.png" height="450"/> 
+    <img src="images/device_application.png"/> 
 </p>
 
 
 We can add the device to the application. 
 <p align="center">
-    <img src="images/device_add.png" height="450"/> 
+    <img src="images/device_add.png"/> 
 </p>
+
+
+We need to configure the corresponding hardware device address.
 
 <p align="center">
-    <img src="images/device_add_config.png" height="450"/> 
+    <img src="images/device_add_config.png"/> 
 </p>
 
+LoRaWAN software network components were provided by the [chirpstack](https://www.chirpstack.io/) project.
 
-
-
-LoRaWAN network components were provided by the [chirpstack](https://www.chirpstack.io/) project.
+The LoRaWAN sensor is a [generic microcontroller](https://heltec.org/project/wifi-lora-32/) with a lora radio interface. It uses the following [sample software](https://github.com/matthijskooijman/arduino-lmic/blob/master/examples/ttn-abp/ttn-abp.ino)
 
 The SIM card used is of [sysmocom](https://www.sysmocom.de/index.html) with an Android Samsung Galaxy S7 SM-G930F.
 
