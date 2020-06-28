@@ -3,7 +3,7 @@
 ## Expected result
 This experiment aims to demonstrate a RAN based on LTE technology with integrated with a LoRa wireless network implemented in hardware (non-3GPP Network). For RAN LTE, we use open-source software and an SDR. We also use an open-source implementation of the SBA-based 5G core software, as illustrated by the following image.
 <p align="center">
-    <img src="images/demo3-exp1.png"/> 
+    <img src="images/demo3-exp1.png" height="300"/> 
 </p>
 
  ## Installation
