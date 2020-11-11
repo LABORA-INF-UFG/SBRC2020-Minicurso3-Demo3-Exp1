@@ -1,4 +1,4 @@
-From netsoft2020tutorial4demo3exp1
+From sbrc2020minicurso3demo3exp1
 
 COPY free5gc.conf /free5gc/install/etc/free5gc/free5gc.conf
 COPY hss.conf /free5gc/install/etc/free5gc/freeDiameter/hss.conf
