@@ -42,12 +42,13 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
  After, we can clone the **NetSoft2020-Tutorial4-Demo3-Exp1 project**:
 ```
-git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo3-Exp1.git
+git clone https://github.com/LABORA-INF-UFG/SBRC2020-Minicurso3-Demo3-Exp1.git
+
 ```
 
 To build the eNB and all 5GC images, use the following command:  
 ```
-sudo docker build -t netsoft2020tutorial4demo3exp1 .
+sudo docker build -t sbrc2020Minicurso3demo3exp1 .
 ```
 
 To run the containers, use the following command:
@@ -57,11 +58,11 @@ sudo docker-compose up -d
 
 To build the LoRaWAN imagens, we use a Virtal Machine in the cloud and the following the commands:
 ```
-git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo3-Exp1.git
+git clone https://github.com/LABORA-INF-UFG/SBRC2020-Minicurso3-Demo3-Exp1.git
 ```
 
 ```
-cd  NetSoft2020-Tutorial4-Demo3-Exp1/LoRaWAN
+cd  SBRC2020-Minicurso3-Demo3-Exp/LoRaWAN
 ```
 
 ```
